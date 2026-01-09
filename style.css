@@ -1,0 +1,101 @@
+@charset "UTF-8";
+
+/* 1. ページ全体のベース設定（上書き） */
+body {
+    max-width: 1000px; /* 課題条件クリア */
+    margin: 0 auto;
+    padding: 60px 20px; /* 上下の余白を広げて高級感を出す */
+    font-family: "Helvetica Neue", Arial, "Hiragino Sans", "Meiryo", sans-serif;
+    line-height: 1.8;
+    color: #333;
+    background-color: #fcfcfc; /* 真っ白より少し落ち着いた色 */
+}
+
+/* 2. 見出し（モダンにアレンジ） */
+h1 {
+    color: #2c3e50;
+    text-align: center;
+    font-size: 2rem;
+    letter-spacing: 0.1em;
+    border-bottom: none; /* 下線を一度消します */
+    margin-bottom: 40px;
+}
+
+/* 3. ナビゲーション（リスト形式に対応） */
+nav {
+    background-color: transparent; /* 背景色を消してスッキリ */
+    text-align: center;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    padding: 15px 0;
+    margin-bottom: 50px;
+}
+
+nav p {
+    margin: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: #666; /* リンク色を少し抑える */
+    font-weight: normal;
+    margin: 0 15px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #000;
+    border-bottom: 1px solid #000;
+}
+
+/* 4. メインセクション */
+section {
+    text-align: center; /* 中央寄せでモダンに */
+    margin-bottom: 80px;
+}
+
+h2 {
+    color: #333; /* オレンジから落ち着いた色へ */
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+/* 5. 画像とリンクボタンの演出 */
+/* HTML内の <a href="october.html">...</a> の部分 */
+section a {
+    text-decoration: none;
+    color: inherit;
+    display: inline-block;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px; /* 角を少し丸く */
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08); /* 柔らかい影 */
+    transition: transform 0.4s ease;
+    margin-bottom: 15px;
+}
+
+/* マウスを乗せた時の動き */
+section a:hover img {
+    transform: translateY(-5px); /* 少し浮く */
+}
+
+section a:hover {
+    color: #e67e22; /* マウスを乗せた時だけアクセントカラー */
+}
+
+/* 6. フッターの設定 */
+footer {
+    margin-top: 100px;    /* メインコンテンツとの距離をしっかり取る */
+    padding: 40px 0;
+    border-top: 1px solid #eee; /* 上に細い線を入れて区切る */
+    text-align: center;
+}
+
+.copyright {
+    font-size: 0.8rem;    /* 文字を小さくして主張を抑える */
+    color: #999;          /* 薄いグレーでモダンに */
+    letter-spacing: 0.05em;
+}
